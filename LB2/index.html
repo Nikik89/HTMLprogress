@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LB2</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #262626;
+            color: #fff;
+            text-align: left;
+            padding: 10px;
+        }
+
+        h1 {
+            margin: 20px 0;
+        }
+
+        .stylist {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .stylist img {
+            max-width: 100%;
+            width: 500px;
+            margin: 10px;
+            border: 2px solid #333;
+            border-radius: 5px;
+        }
+
+        .price-list {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        #album {
+            width: 250px;
+            border: 3px solid #000;
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+        .booking-form {
+            background-color: #fff;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logoG.gif" alt="Логотип сайта" width="250">
+    </header>
+
+    <div class="stylist">
+        <img src="cut1.jpg" alt="Причёска 1">
+        <img src="cut2.jpg" alt="Причёска 2">
+        <img src="cut3.jpg" alt="Причёска 3">
+    </div>
+    <div class="price-list">
+        <h2>Прайс-лист</h2>
+        <ul>
+            <li>Стрижка - 1000 руб.</li>
+            <li>Окрашивание - 1500 руб.</li>
+            <li>Укладка - 800 руб.</li>
+        </ul>
+    </div>
+    <div class="price-list">
+        <h2>Альбом</h2>
+        <p><a href="album.html"><img id="album" src="album.jpg" alt="альбом" width="250"></a></p>
+    </div>
+    <div class="booking-form">
+        <h2>Запись на стрижку</h2>
+        <form action="mailto:nikintnia@rambler.ru" method="post">
+            <label for="name">Имя:</label>
+            <input type="text" id="name" name="name" required>
+            <label>
+                Пол мужской<input name="Пол" type=radio value="Мужской"> &nbsp;
+                Пол женский<input name="Пол" type=radio value="Женский">
+            </label>
+
+            <label for="phone">Телефон:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="service">Выберите услугу:</label>
+            <select id="service" name="service">
+                <option value="Стрижка">Стрижка</option>
+                <option value="Окрашивание">Окрашивание</option>
+                <option value="Укладка">Укладка</option>
+                <option value="Маникюр">Маникюр</option>
+            </select>
+
+            <label for="comment">Комментарий:</label>
+            <textarea id="comment" name="comment" rows="4"></textarea>
+
+            <input type="submit" value="Записаться">
+            <input type="reset" value="Очистить форму">
+        </form>
+    </div>
+</body>
+</html>
