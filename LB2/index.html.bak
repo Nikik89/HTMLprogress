@@ -98,10 +98,10 @@
     </header>
 
     <div class="stylist">
-        
-        
+        <img src="cut1.jpg" alt="Причёска 1">
+        <img src="cut2.jpg" alt="Причёска 2">
         <img src="cut3.jpg" alt="Причёска 3">
-		
+		<img src="cut4.jpg" alt="Причёска 3">
 		<img src="cut5.jpg" alt="Причёска 3">
 		<img src="CutHead.jpg" alt="Причёска 4">
     </div>

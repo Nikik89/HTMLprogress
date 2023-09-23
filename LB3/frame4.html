@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LB2</title>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/din-alternate');
+
+        body {
+            font-family: "DIN Alternate", sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .booking-form {
+            background-color: #fff;
+            padding: 15px;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        .checkbox,
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .datestyle {
+            width: 100%;
+            padding: 5px;
+            margin-bottom: 15px;
+        }
+
+        input[type="submit"],
+        input[type="reset"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="booking-form">
+        <h2>Запись на стрижку</h2>
+        <form action="mailto:nikintnia@rambler.ru" method="post">
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" required>
+            <label>
+                Пол мужской<input name="Пол" type=radio value="Мужской" checked> &nbsp;
+                Пол женский<input name="Пол" type=radio value="Женский">
+            </label>
+
+            <label for="phone">Телефон</label>
+            <input type="tel" id="phone" name="phone" required>
+            <label for="service">Выберите услугу</label>
+            <div class="checkbox">
+                <p><input type="checkbox" name="a" value="Стрижка" checked> Стрижка</p>
+                <p><input type="checkbox" name="b" value="Окрашивание"> Окрашивание</p>
+                <p><input type="checkbox" name="s" value="Укладка"> Укладка</p>
+            </div>
+            <label for="start">Дата записи</label>
+            <div class="datestyle">
+                <input type="date" value="2023-09-25" min="2023-09-25" max="2023-10-31" />
+            </div>
+            <label for="comment">Комментарий</label>
+            <textarea id="comment" name="comment" rows="1"></textarea>
+
+            <input type="submit" value="Записаться">
+            <input type="reset" value="Очистить форму">
+        </form>
+    </div>
+</body>
+
+</html>
